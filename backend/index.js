@@ -44,6 +44,11 @@ await mongoose
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.error("MongoDB connection error:", err));
 
+  app.get("/", (req, res) => {
+    res.send("API is working");
+  });
+  
+
 app.post("/signup", async (req, res) => {
   const { username, password } = req.body;
   try {
