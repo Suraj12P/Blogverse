@@ -20,7 +20,7 @@ export default function Post({
     <div className="mb-8 m-1 rounded-xl overflow-hidden shadow-2xl">
       <Link to={`/post/${_id}`}>
         <img
-          src={`${API}` + cover}
+          src={`${API}/` + cover}
           alt="image"
           className="w-full h-[300px] md:h-[450px]"
         />
