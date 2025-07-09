@@ -7,8 +7,11 @@ export default function PostPage() {
   const [postInfo, setPostInfo] = useState(null);
   const { userInfo } = useContext(UserContext);
   const { id } = useParams();
+  const API = import.meta.env.VITE_API_URL;
+  
+  
   useEffect(() => {
-    fetch(`http://localhost:4000/post/${id}`).then((response) => {
+    fetch(`${API}/post/${id}`).then((response) => {
       response.json().then((postInfo) => {
         setPostInfo(postInfo);
       });
@@ -21,7 +24,7 @@ export default function PostPage() {
     );
     if (!confirmDelete) return;
 
-    fetch(`http://localhost:4000/post/${postInfo._id}`, {
+    fetch(`${API}/post/${postInfo._id}`, {
       method: "DELETE",
       credentials: "include", 
     }).then((res) => {
@@ -96,7 +99,7 @@ export default function PostPage() {
 
       <div className="rounded-xl overflow-hidden shadow-xl">
         <img
-          src={`http://localhost:4000/${postInfo.cover}`}
+          src={`${API}/${postInfo.cover}`}
           alt="Post cover"
           className="w-full h-[300px]"
         />

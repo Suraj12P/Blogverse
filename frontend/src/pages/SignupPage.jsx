@@ -7,11 +7,13 @@ const SignupPage = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [redirect, setRedirect] = useState(false);
-
+  const API = import.meta.env.VITE_API_URL;
+  
+  
   async function SignUp(e) {
     e.preventDefault();
 
-    const response = await fetch("http://localhost:4000/signup", {
+    const response = await fetch(`${API}/signup`, {
       method: "POST",
       body: JSON.stringify({ fullName, username, password }),
       headers: { "Content-Type": "application/json" },

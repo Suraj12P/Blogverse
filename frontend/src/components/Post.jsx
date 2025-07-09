@@ -8,12 +8,19 @@ export default function Post({
   cover,
   createdAt,
   author,
-}) {
+}) 
+
+
+{
+
+  const API = import.meta.env.VITE_API_URL;
+  fetch(`${API}/post`);
+
   return (
     <div className="mb-8 m-1 rounded-xl overflow-hidden shadow-2xl">
       <Link to={`/post/${_id}`}>
         <img
-          src={"http://localhost:4000/" + cover}
+          src={`${API}` + cover}
           alt="image"
           className="w-full h-[300px] md:h-[450px]"
         />

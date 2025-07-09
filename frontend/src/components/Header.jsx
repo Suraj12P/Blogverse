@@ -6,8 +6,12 @@ const Header = () => {
   const { setUserInfo, userInfo } = useContext(UserContext);
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const API = import.meta.env.VITE_API_URL;
+ 
+
+
   useEffect(() => {
-    fetch("http://localhost:4000/profile", {
+    fetch(`${API}/profile`, {
       credentials: "include",
     }).then((response) => {
       response.json().then((userInfo) => {
