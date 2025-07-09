@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
-import IndexPage from "./pages/indexPage";
+import IndexPage from "./pages/IndexPage";
 import LoginPage from "./pages/LoginPage";
 import SignupPage from "./pages/SignupPage";
 import { UserContextProvider } from "./UserContext";
