@@ -30,7 +30,7 @@ const salt = bcrypt.genSaltSync(10);
 
 app.use(
   cors({
-    origin: "https://blogverse-phi.vercel.app/",
+    origin: "https://blogverse-phi.vercel.app",
     credentials: true,
   })
 );
