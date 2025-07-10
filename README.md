@@ -26,9 +26,11 @@ cd backend
 npm install
 ```
 ### Create a .env file and add the following:
+```bash
  MONGODB_URL=<your-mongo-uri>
+
  JWT_SECRET=<your-secret>
- 
+``` 
 ```bash
 node index.js
 ```
