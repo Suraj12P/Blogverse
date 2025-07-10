@@ -1,6 +1,6 @@
 # Blogverse
 
-A full-stack blog platform where users can sign up, log in, and publish blogs with images. Built with **MERN Stack** and deployed on **Render** (backend) & **Vercel** (frontend).
+Blogverse is a full-stack blogging platform where users can sign up, log in securely, and create rich blog posts with cover images. Users can edit or delete their posts, and the platform ensures only authenticated users can manage their own content.It provides a modern, responsive frontend experience powered by React + Vite and styled with Tailwind CSS, while the backend handles API routes, image uploads, and authentication via JWT tokens.
 
 ## 🧰 Tech Stack
 
