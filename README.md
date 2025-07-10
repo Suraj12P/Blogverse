@@ -25,9 +25,10 @@ A full-stack blog platform where users can sign up, log in, and publish blogs wi
 cd backend
 npm install
 ```
-# Create a .env file and add the following:
-# MONGODB_URL=<your-mongo-uri>
-# JWT_SECRET=<your-secret>
+### Create a .env file and add the following:
+ MONGODB_URL=<your-mongo-uri>
+ JWT_SECRET=<your-secret>
+ 
 ```bash
 node index.js
 ```
